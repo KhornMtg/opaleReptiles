@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>{% block title %}Opale Reptiles | page de base{% endblock %}</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href=" {{ asset('css/style.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        
+        {% block stylesheets %}{% endblock %}
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{{ path('home') }}"></a>Accueil</a></li>
+                    <li><a href=""></a>Cheptel</a></li>
+                    <li><a href=""></a>Maintenance</a></li>
+                    <li><a href=""></a>Reproductions</a></li>
+                    <li><a href=""></a>Naissances</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        {% block body %}{% endblock %}
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+        {% block javascripts %}{% endblock %}
+
+    </body>
+
+</html>
